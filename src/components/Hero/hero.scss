@@ -16,11 +16,7 @@
 	transform: translateY(-50%);
 }
 
-h1:first-child {
-	margin: 0;
-}
-
-h1 {
+.hero h1 {
 	line-height: 1em;
 	color: white;
 	font-size: 10vh;
@@ -29,17 +25,16 @@ h1 {
 	text-align: center;
 }
 
-h5 {
+.hero h5 {
 	line-height: 1.56em;
 	color: white;
 	font-size: 2.5vh;
 	letter-spacing: 0.75vh;
-	margin: 0;
-	padding: 0;
+	margin-right: -0.75vh;
 	text-align: center;
 }
 
-h6 {
+.hero h6 {
 	color: white;
 	line-height: 1.5em;
 	padding: 0.75em 0 0 0;
@@ -48,7 +43,7 @@ h6 {
 	text-align: center;
 }
 
-button {
+.homeButton {
 	font-size: 2vh;
 	color: white;
 	background-color: $buttonColor;
