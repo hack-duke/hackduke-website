@@ -5,7 +5,7 @@ import classes from './tracksbox.scss'
 export const TracksBox = (props) => (
   <div>
     <div className={classes.heading}>
-      <h3>{props.track}</h3>
+      <p>{props.track}</p>
     </div>
     <div className={classes.paragraph}>
       <p>{props.text}</p>
