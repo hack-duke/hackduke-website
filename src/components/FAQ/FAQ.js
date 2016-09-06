@@ -6,11 +6,11 @@ import FAQSection from 'components/FAQSection'
 const title = 'FAQS'
 
 export const FAQ = () => (
-  <div style={{"padding": "5% 15% 5% 15%"}}>
+  <div style={{"padding": "70px 15% 70px 15%"}}>
     <div className={classes.header}>
       {title}
     </div>
-    <Row style={{"padding-top": "5%"}}>
+    <Row style={{"padding-top": "10px"}}>
       <Col md={4}>
         <FAQSection title={"How can I help? I want to volunteer!"}
           text={"If you're a Duke student and you want to help  \
