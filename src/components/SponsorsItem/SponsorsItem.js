@@ -12,7 +12,7 @@ export const SponsorsItem = (props) => (
   <div>
     <div>
       <img className={classes.imageBox}
-           src={props.imageUrl} />
+        src={props.imageUrl} />
     </div>
   </div>
 )
