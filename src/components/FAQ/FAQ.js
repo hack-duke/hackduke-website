@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from '../About/About.scss'
+import classes from './FAQ.scss'
 import { Col, Row } from 'react-bootstrap'
 import FAQSection from 'components/FAQSection'
 
