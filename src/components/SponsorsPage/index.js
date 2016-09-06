@@ -1,3 +1,3 @@
-import TracksPage from './trackspage'
+import SponsorsPage from './SponsorsPage'
 
-export default TracksPage
+export default SponsorsPage

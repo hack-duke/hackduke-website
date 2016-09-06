@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from './sponsorsitem.scss'
+import classes from '../TracksBox/tracksbox.scss'
 
 /*
 * props to pass in:
@@ -11,7 +11,11 @@ import classes from './sponsorsitem.scss'
 export const SponsorsItem = (props) => (
   <div>
     <div>
-      <a href="{props.sponsorUrl}"><img alt="{props.imageAltText}" src="{props.imageUrl}"></a>
+      <a href={props.sponsorUrl}>
+        <img
+          alt={props.imageAltText}
+          src={props.imageUrl} />
+      </a>
     </div>
   </div>
 )
