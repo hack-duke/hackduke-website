@@ -4,7 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import FAQSection from 'components/FAQSection'
 
 export const FAQ = () => (
-  <div className={classes.FAQ}>
+  <div className={classes.section}>
     <div className={'container text-center'}>
       <div className={classes.header}>
         FAQS
