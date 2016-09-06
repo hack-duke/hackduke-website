@@ -1,8 +1,8 @@
 import React from 'react'
-import classes from '../About/About.scss'
+import classes from './SponsorsPage.scss'
 
 export const SponsorsPage = () => (
-  <div>
+  <div className={classes.sponsors}>
     <div className={'container text-center'}>
       <h1 className={classes.header}>SPONSORS</h1>
       <p className={classes.tracksText}>
