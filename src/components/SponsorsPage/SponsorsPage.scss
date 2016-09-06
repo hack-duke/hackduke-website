@@ -14,3 +14,15 @@
   font-size: 48px;
   padding: 0 0 40px 0;
 }
+
+.homeButton {
+	font-size: 2vh;
+	color: white;
+	background-color: $applyBlue;
+	border: 2px solid $applyBlue;
+	border-radius: 2.85vh;
+	width: 20vh;
+	height: 5vh;
+	margin: 0 auto;
+	display: block;
+}

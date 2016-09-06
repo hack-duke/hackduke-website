@@ -1,10 +1,13 @@
 import React from 'react'
 import classes from './SponsorsPage.scss'
 
+// Static content for page
 const title="SPONSORS";
 const aboutText= ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
                   "do eiusmod tempor incididunt ut labore et dolore magna aliqua"];
+const sponsorButtonText="Sponsor Us";
 
+// Page layout 
 export const SponsorsPage = () => (
   <div className={classes.sponsors}>
     <div className={'container text-center'}>
@@ -13,6 +16,7 @@ export const SponsorsPage = () => (
         {aboutText[0]} <br/>
         {aboutText[1]}
       </p>
+      <button className={classes.homeButton}>{sponsorButtonText}</button>
     </div>
   </div>
 )
