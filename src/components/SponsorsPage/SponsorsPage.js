@@ -1,5 +1,5 @@
 import React from 'react'
-import classes from '../About/About.scss'
+import classes from './SponsorsPage.scss'
 import SponsorsItem from 'components/SponsorsItem'
 import { Row, Col } from 'react-bootstrap'
 import a16z from 'static/sponsors/a16z.png'
@@ -21,33 +21,44 @@ const sponsorsItemAtIndex = (url, index, mod) => {
   } 
 } 
 
+const title = 'SPONSORS'
+const aboutText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+const sponsorButtonText = 'Sponsor Us'
+
+// Page layout
 export const SponsorsPage = () => (
-  <div>
+  <div className={classes.sponsors}>
     <div className={'container text-center'}>
-      <h1 className={classes.header}>SPONSORS</h1>
-      <p className={classes.tracksText}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+      <h1 className={classes.header}>{title}</h1>
+      <p className={classes.sponsorsText}>
+        {aboutText}
       </p>
-      <Row>
-        <Col md={4}>
-            {image_urls.map((url, index) =>  {
-                return sponsorsItemAtIndex(url, index, 0)
-              }
-            )}
-        </Col>
-        <Col md={4}>
-          {image_urls.map((url, index) =>  {
-              return sponsorsItemAtIndex(url, index, 1)
-            }
-          )}
-        </Col>
-        <Col md={4}>
-          {image_urls.map((url, index) =>  {
-              return sponsorsItemAtIndex(url, index, 2)
-            }
-          )}
-        </Col>
-      </Row>
+      <br />
+      <button className={classes.homeButton}>{sponsorButtonText}</button>
+      <div className={classes.section}>
+        <div className={classes.logobox}>
+          <Row>
+            <Col md={4}>
+                {image_urls.map((url, index) =>  {
+                    return sponsorsItemAtIndex(url, index, 0)
+                  }
+                )}
+            </Col>
+            <Col md={4}>
+              {image_urls.map((url, index) =>  {
+                  return sponsorsItemAtIndex(url, index, 1)
+                }
+              )}
+            </Col>
+            <Col md={4}>
+              {image_urls.map((url, index) =>  {
+                  return sponsorsItemAtIndex(url, index, 2)
+                }
+              )}
+            </Col>
+          </Row>
+        </div>
+      </div>
     </div>
   </div>
 )
