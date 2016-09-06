@@ -1,10 +1,12 @@
 @import 'src/styles/base';
 
 .section {
-	padding: 5vw 10vw 5vw 10vw;
+	padding: 5% 15% 5% 15%;
 }
 
+
 .header {
+	text-align: center;
   color: $headerGray;
   letter-spacing: 5px;
   font-size: 48px;
