@@ -33,21 +33,26 @@
 
 .logobox {
 	padding: 50px 10vw 50px 10vw;
-	width: 80vw;
+	width: 70vw;
 	margin: 0 auto;
 	background-size: 100% 100%;
 	background-color: #FFFFFF;
 	background-repeat: no-repeat;
 }
 
-@media (max-width: 1024px) {
-	.sponsorsText {
-		padding-left: 20vw;
-		padding-right: 20vw;
-	}
-}
-
 .sponsorsText {
 	padding-left: 30vw;
 	padding-right: 30vw;
+}
+
+@media (max-width: 1024px) {
+	.sponsorsText {
+		padding-left: 0;
+		padding-right: 0;
+		text-align: left;
+	}
+
+	.logobox {
+		width: 100%;
+	}
 }

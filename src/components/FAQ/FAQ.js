@@ -1,12 +1,13 @@
 import React from 'react'
 import classes from '../About/About.scss'
+import faqclasses from '../FAQ/FAQ.scss'
 import { Col, Row } from 'react-bootstrap'
 import FAQSection from 'components/FAQSection'
 
 const title = 'FAQS'
 
 export const FAQ = () => (
-  <div style={{'padding': '70px 15% 70px 15%'}}>
+  <div className={faqclasses.faq}>
     <div className={classes.header}>
       {title}
     </div>
