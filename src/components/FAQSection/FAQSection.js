@@ -5,7 +5,7 @@ import faqclasses from './FAQSection.scss'
 export const FAQSection = (props) => (
 
   <div className={faqclasses.section}>
-    <div className={classes.sectionHeader} style={{"text-align":"left"}}>
+    <div className={classes.sectionHeader} style={{'text-align': 'left'}}>
       {props.title}
     </div>
 
