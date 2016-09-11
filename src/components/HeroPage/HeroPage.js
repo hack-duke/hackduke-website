@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './Hero.scss'
+import classes from './HeroPage.scss'
 
-export const Hero = () => (
+export const HeroPage = () => (
   <div>
     <div className={classes.hero}>
       <div className={classes.mainText}>
@@ -15,4 +15,4 @@ export const Hero = () => (
   </div>
 )
 
-export default Hero
+export default HeroPage

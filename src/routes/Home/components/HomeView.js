@@ -1,6 +1,6 @@
 import React from 'react'
 // import classes from './HomeView.scss'
-import Hero from 'components/Hero'
+import HeroPage from 'components/HeroPage'
 import TracksPage from 'components/TracksPage'
 import About from 'components/About'
 import FAQ from 'components/FAQ'
@@ -9,7 +9,7 @@ import Social from 'components/Social'
 
 export const HomeView = () => (
   <div>
-    <Hero />
+    <HeroPage />
     <div id={'about'} style={{'transform': 'translateY(-50px)'}}></div>
     <About />
     <div id={'tracks'} style={{'transform': 'translateY(-50px)'}}></div>
