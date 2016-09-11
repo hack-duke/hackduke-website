@@ -92,21 +92,23 @@ class SponsorsPage extends React.Component {
 
   render () {
     return (
-      <div id={'sponsors'} className={classes.sponsors}>
-        <div className={'container text-center'}>
-          <h1 className={classes.header}>{this.state.title}</h1>
-          <p className={classes.sponsorsText}>
-            {this.state.aboutText}
-          </p>
-          <br />
-          <a className={classes.link} href="http://www.google.com"> 
-            <button className={classes.homeButton}> {this.state.sponsorButtonText} </button>
-          </a>
-          <div className={classes.section}>
-            <div className={classes.logobox}>
-              <Row>
-                {this.renderSponsors()}
-              </Row>
+      <div>
+        <div className={classes.sponsors}>
+          <div className={'container text-center'}>
+            <h1 className={classes.header}>{this.state.title}</h1>
+            <p className={classes.sponsorsText}>
+              {this.state.aboutText}
+            </p>
+            <br />
+            <a className={classes.link} href="http://www.google.com"> 
+              <button className={classes.homeButton}> {this.state.sponsorButtonText} </button>
+            </a>
+            <div className={classes.section}>
+              <div className={classes.logobox}>
+                <Row>
+                  {this.renderSponsors()}
+                </Row>
+              </div>
             </div>
           </div>
         </div>

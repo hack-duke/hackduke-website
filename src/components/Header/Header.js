@@ -14,7 +14,7 @@ export const Header = () => (
         <Nav>
           <NavItem className={classes.navItem} eventKey={1} href={'#about'}>ABOUT</NavItem>
           <NavItem className={classes.navItem} eventKey={2} href={'#tracks'}>TRACKS</NavItem>
-          <NavItem className={classes.navItem} eventKey={3} href={'#faqs'}>FAQS</NavItem>
+          <NavItem className={classes.navItem} eventKey={3} href={'#faq'}>FAQS</NavItem>
           <NavItem className={classes.navItem} eventKey={4} href={'#sponsors'}>SPONSORS</NavItem>
         </Nav>
         <Nav pullRight>
