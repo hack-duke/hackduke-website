@@ -42,8 +42,10 @@ const MOUNT_NODE = document.getElementById('root')
 
 let render = () => {
   const routes = require('./routes/index').default(store)
-  console.log(store.getState())
-  store.dispatch(push('/'))
+  const currRoute = store.getState().router.locationBeforeTransitions.pathname
+  if(currRoute === '/index.html') {
+    store.dispatch(push('/'))
+  }
 
   ReactDOM.render(
     <AppContainer
