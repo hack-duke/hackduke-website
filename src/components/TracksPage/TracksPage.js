@@ -1,5 +1,4 @@
 import React from 'react'
-// import BackgroundImage from '../assets/hackduke-background.png'
 import classes from './TracksPage.scss'
 import TracksGrid from 'components/TracksGrid'
 

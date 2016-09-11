@@ -1,7 +1,6 @@
 import React from 'react'
 import TracksBox from 'components/TracksBox'
 import {Grid, Row, Col} from 'react-bootstrap'
-// import BackgroundImage from '../assets/hackduke-background.png'
 import classes from './TracksGrid.scss'
 
 const dummySentences = ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
