@@ -42,7 +42,7 @@
 }
 
 .logobox {
-	padding: 75px 5vw 0px 5vw;
+	padding: 100px 5vw 0px 5vw;
 	width: 80vw;
 	margin: 0 auto;
 	background-size: 100% 100%;
@@ -55,7 +55,7 @@
 	padding-right: 25vw;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $desktopBreakpoint) {
 	.sponsorsText {
 		padding-left: 0;
 		padding-right: 0;
@@ -67,6 +67,7 @@
 	}
 
 	.logobox {
+		padding-top: 75px;
 		width: 100%;
 	}
 }

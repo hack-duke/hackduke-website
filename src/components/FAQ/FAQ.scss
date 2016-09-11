@@ -3,3 +3,11 @@
 .faq {
   padding: 50px 10%;
 }
+
+@media (max-width: $tabletBreakpoint) {
+
+  .faq {
+    padding: 50px 15px;
+  }
+
+}

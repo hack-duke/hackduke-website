@@ -61,9 +61,9 @@ class SponsorsPage extends React.Component {
 
   renderSponsors () {
     let mapArray = []
-    if (this.state.windowWidth < 500) {
+    if (this.state.windowWidth < 600) {
       mapArray = [0]
-    } else if (this.state.windowWidth < 1024) {
+    } else if (this.state.windowWidth < 1000) {
       mapArray = [0, 1]
     } else {
       mapArray = [0, 1, 2]
