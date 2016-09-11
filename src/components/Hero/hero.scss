@@ -6,7 +6,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-	height: calc(100vh - 50px); /*50px is navBar height*/
+  /*50px is navBar height*/
+	margin-top: 50px;
+	height: calc(100vh - 50px);
 	background-image: url('static/landing.png');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -41,10 +43,20 @@ img {
 	font-size: 2vh;
 	color: white;
 	background-color: $applyBlue;
-	border: 2px solid $applyBlue;
+	border: none;
+	padding: 0px;
 	border-radius: 2.85vh;
 	width: 20vh;
 	height: 5vh;
 	margin: 0 auto;
 	display: block;
+}
+
+.applyLink, .applyLink:hover, .applyLink:visited, .applyLink:link, .applyLink:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.homeButton:hover {
+  background-color: darken($applyBlue, 10%);
 }

@@ -9,6 +9,7 @@ import _debug from 'debug'
 import config from '../config'
 import webpackDevMiddleware from './middleware/webpack-dev'
 import webpackHMRMiddleware from './middleware/webpack-hmr'
+import enforceHttps from 'koa-sslify'
 
 const debug = _debug('app:server')
 const paths = config.utils_paths
@@ -51,6 +52,8 @@ if (config.env === 'development') {
     'server such as nginx to serve your static files. See the "deployment" ' +
     'section in the README for more information on deployment strategies.'
   )
+  
+  app.use(enforceHttps({trustProtoHeader: true}))
 
   // Serving ~/dist by default. Ideally these files should be served by
   // the web server and not the app server, but this helps to demo the

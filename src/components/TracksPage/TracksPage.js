@@ -4,7 +4,7 @@ import classes from './TracksPage.scss'
 import TracksGrid from 'components/tracksgrid'
 
 export const TracksPage = () => (
-  <div>
+  <div id={'tracks'}>
     <div className={classes.container}>
       <div className={classes.tracks}>
         <h1 className={classes.tracksHeader}>TRACKS</h1>

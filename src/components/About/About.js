@@ -3,11 +3,9 @@ import classes from './About.scss'
 import AboutSection from 'components/AboutSection'
 
 export const About = () => (
-  <div className={classes.about}>
+  <div id={'about'} className={classes.about}>
     <div className={'container text-center'}>
-      <div className={classes.header}>
-        HACKDUKE IS ABOUT
-      </div>
+      <h1 className={classes.header}> HACKDUKE IS ABOUT </h1>
       <AboutSection title={"COLLABORATION NOT COMPETITION."}
         text={"HackDuke is not just about building meaningful projects. \
               It's also an open forum to discuss, share and bring to life ideas \

@@ -5,6 +5,7 @@ import TracksPage from 'components/TracksPage'
 import About from 'components/About'
 import FAQ from 'components/FAQ'
 import SponsorsPage from 'components/SponsorsPage'
+import Social from 'components/Social'
 
 export const HomeView = () => (
   <div>
@@ -13,6 +14,7 @@ export const HomeView = () => (
     <TracksPage />
     <FAQ />
     <SponsorsPage />
+    <Social />
   </div>
 )
 

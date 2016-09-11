@@ -7,11 +7,11 @@ import FAQSection from 'components/FAQSection'
 const title = 'FAQS'
 
 export const FAQ = () => (
-  <div className={faqclasses.faq}>
+  <div id={'faqs'} className={faqclasses.faq}>
     <div className={classes.header}>
       {title}
     </div>
-    <Row style={{'padding-top': '10px'}}>
+    <Row style={{'paddingTop': '30px'}}>
       <Col md={4}>
         <FAQSection title={'How can I help? I want to volunteer!'}
           text={'If you\'re a Duke student and you want to help  \

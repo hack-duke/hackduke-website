@@ -16,6 +16,10 @@
     height: 100%;
     font-family: "Avenir Next", sans-serif;
   }
+
+  button:focus {
+    outline: none;
+  }
   
   *,
   *:before,
