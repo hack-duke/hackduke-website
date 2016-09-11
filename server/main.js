@@ -5,6 +5,7 @@ import webpackConfig from '../build/webpack.config'
 import historyApiFallback from 'koa-connect-history-api-fallback'
 import serve from 'koa-static'
 import proxy from 'koa-proxy'
+import send from 'koa-send'
 import _debug from 'debug'
 import config from '../config'
 import webpackDevMiddleware from './middleware/webpack-dev'
@@ -58,7 +59,10 @@ if (config.env === 'development') {
   // Serving ~/dist by default. Ideally these files should be served by
   // the web server and not the app server, but this helps to demo the
   // server in production.
-  app.use(serve(paths.dist()))
+  app.use(async (ctx, next) => {
+     await send(ctx, ctx.path, { root: paths.dist(), index: 'index.html' })
+  })
+  
 }
 
 export default app
