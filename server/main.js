@@ -52,7 +52,7 @@ if (config.env === 'development') {
     'server such as nginx to serve your static files. See the "deployment" ' +
     'section in the README for more information on deployment strategies.'
   )
-  
+
   app.use(enforceHttps({trustProtoHeader: true}))
 
   // Serving ~/dist by default. Ideally these files should be served by

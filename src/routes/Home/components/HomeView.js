@@ -11,9 +11,9 @@ export const HomeView = () => (
   <div>
     <Hero />
     <div id={'about'} style={{'transform': 'translateY(-50px)'}}></div>
-    <About /> 
+    <About />
     <div id={'tracks'} style={{'transform': 'translateY(-50px)'}}></div>
-    <TracksPage /> 
+    <TracksPage />
     <div id={'faq'} style={{'transform': 'translateY(-50px)'}}> </div>
     <FAQ />
     <div id={'sponsors'} style={{'transform': 'translateY(-50px)'}}> </div>

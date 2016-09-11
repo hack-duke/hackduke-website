@@ -8,10 +8,9 @@ export const TracksBox = (props) => (
     </div>
     <div className={classes.paragraph}>
       <p>{props.text}</p>
-      <a href={props.link} className={classes.link}> 
+      <a href={props.link} className={classes.link}>
         <button className={classes.moreButton}> Learn More </button>
       </a>
-      <div />
     </div>
   </div>
 )

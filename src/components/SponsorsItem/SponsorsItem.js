@@ -7,9 +7,9 @@ const determineSize = (size) => {
       return {'maxWidth': '225px'}
     case 2:
       return {'maxWidth': '150px'}
-    case 1: 
+    case 1:
       return {'maxWidth': '100px'}
-    default: 
+    default:
       return {'maxWidth': '100px'}
   }
 }

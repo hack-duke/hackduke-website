@@ -26,17 +26,17 @@ import particle from 'static/sponsors/particle.png'
 
 class SponsorsPage extends React.Component {
 
-  constructor() {
+  constructor () {
     super()
     this.state = {
-      sponsorsUrls:['http://ibm.com', 'http://google.com', 'http://yikyak.com', 'http://esri.com',
-      'http://capitalone.com', 'http://facebook.com', 'http://infusion.com', 'http://mbacsi.com', 
-      'http://sqlsentry.com', 'http://engineyard.com', 'http://plaid.com', 'http://hackgt.com', 
-      'http://cs.duke.edu', 'http://epic.com', 'http://att.com', 'http://colab.duke.edu', 
-      'http://cerner.com', 'http://netapp.com', 'https://nicholas.duke.edu', 'http://cisco.com', 
+      sponsorsUrls: ['http://ibm.com', 'http://google.com', 'http://yikyak.com', 'http://esri.com',
+      'http://capitalone.com', 'http://facebook.com', 'http://infusion.com', 'http://mbacsi.com',
+      'http://sqlsentry.com', 'http://engineyard.com', 'http://plaid.com', 'http://hackgt.com',
+      'http://cs.duke.edu', 'http://epic.com', 'http://att.com', 'http://colab.duke.edu',
+      'http://cerner.com', 'http://netapp.com', 'https://nicholas.duke.edu', 'http://cisco.com',
       'http://particle.io'],
       windowWidth: window.innerWidth,
-      imageUrls: [ibm, google, yikyak, esri, capitalone, fb, infusion, mbacsi, sqlsentry, engineyard, 
+      imageUrls: [ibm, google, yikyak, esri, capitalone, fb, infusion, mbacsi, sqlsentry, engineyard,
       plaid, hackgt, cs, epic, att, colab, cerner, netapp, nicholas, cisco, particle],
       sizes: [3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1],
       title: 'LAST YEAR\'S SPONSORS',
@@ -75,15 +75,15 @@ class SponsorsPage extends React.Component {
     )
   }
 
-  sponsorsColAtMod(mod, divisor) {
+  sponsorsColAtMod (mod, divisor) {
     return (
-      <Col xs={12/divisor} key={mod}>
+      <Col xs={12 / divisor} key={mod}>
         {this.state.imageUrls.map((url, index) => {
           if (index % divisor === mod) {
-            return <SponsorsItem key={index} 
-                    imageUrl={url} 
-                    sponsorUrl={this.state.sponsorsUrls[index]} 
-                    size={this.state.sizes[index]} />
+            return <SponsorsItem key={index}
+              imageUrl={url}
+              sponsorUrl={this.state.sponsorsUrls[index]}
+              size={this.state.sizes[index]} />
           }
         })}
       </Col>
@@ -100,7 +100,7 @@ class SponsorsPage extends React.Component {
               {this.state.aboutText}
             </p>
             <br />
-            <a className={classes.link} href="http://www.google.com"> 
+            <a className={classes.link} href={'http://www.google.com'}>
               <button className={classes.homeButton}> {this.state.sponsorButtonText} </button>
             </a>
             <div className={classes.section}>

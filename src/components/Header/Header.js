@@ -18,7 +18,7 @@ export const Header = () => (
           <NavItem className={classes.navItem} eventKey={4} href={'#sponsors'}>SPONSORS</NavItem>
         </Nav>
         <Nav pullRight>
-          <a className={classes.applyButton} eventKey={1} href="http://www.google.com">Apply Now </a>
+          <a className={classes.applyButton} eventKey={1} href={'http://www.google.com'}>Apply Now </a>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
