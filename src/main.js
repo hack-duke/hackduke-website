@@ -42,6 +42,7 @@ const MOUNT_NODE = document.getElementById('root')
 
 let render = () => {
   const routes = require('./routes/index').default(store)
+  console.log(store.getState())
   store.dispatch(push('/'))
 
   ReactDOM.render(
