@@ -21,7 +21,7 @@ export const TracksGrid = () => (
               text={dummySentences.slice(0, 6).join(' ')} />
           </div>
           <div className={classes.leftTracksBox}>
-            <TracksBox track={"HEALTH & WELLNESS"}
+            <TracksBox track={"HEALTH &\nWELLNESS"}
               link={'http://hackduke.tumblr.com/tagged/health-&-wellness'}
               text={dummySentences.slice(0, 4).join(' ')} />
           </div>
