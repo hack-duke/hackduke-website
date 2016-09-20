@@ -61,6 +61,7 @@ export const FAQ = () => (
                   found here.'} />
           <FAQSection title={'How can I become a sponsor?'}
             text={'Email us at sponsorship@hackduke.org.'} />
+          <img src='hackkitty.png' alt='Hackduke Kitty' />
         </Col>
       </Row>
     </div>
