@@ -10,7 +10,6 @@ import _debug from 'debug'
 import config from '../config'
 import webpackDevMiddleware from './middleware/webpack-dev'
 import webpackHMRMiddleware from './middleware/webpack-hmr'
-import enforceHttps from 'koa-sslify'
 
 const debug = _debug('app:server')
 const paths = config.utils_paths
@@ -53,7 +52,9 @@ if (config.env === 'development') {
     'section in the README for more information on deployment strategies.'
   )
 
-  app.use(enforceHttps({trustProtoHeader: true}))
+  app.use(convert(historyApiFallback({
+    verbose: false
+  })))
 
   app.use(async (ctx, next) => {
     await send(ctx, ctx.path, { root: paths.dist(), index: 'index.html' })
