@@ -1,5 +1,4 @@
 import React from 'react'
-import Scroll from 'react-scroll'
 import classes from '../About/About.scss'
 import faqclasses from '../FAQ/FAQ.scss'
 import { Col, Row } from 'react-bootstrap'
@@ -9,7 +8,6 @@ const title = 'FAQS'
 
 export const FAQ = () => (
   <div>
-    <Scroll.Element name='faqScrollPoint'></Scroll.Element>
     <div className={faqclasses.faq}>
       <h1 className={classes.header}>
         {title}
