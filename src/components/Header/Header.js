@@ -9,13 +9,13 @@ import classes from './Header.scss'
 
 class Header extends React.Component {
 
-  // scrollToElement() {
-  //   Scroll.scroller.scrollTo('aboutScrollPoint',{
-  //     duration: 850,
-  //     delay: 100,
-  //     smooth: true,
-  //   });
-  // }
+  scrollToElement (elem) {
+    Scroll.scroller.scrollTo(elem, {
+      duration: 850,
+      delay: 100,
+      smooth: true
+    })
+  }
 
   render () {
     return (
@@ -28,34 +28,14 @@ class Header extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem className={classes.navItem} onClick={function () {
-                Scroll.scroller.scrollTo('aboutScrollPoint', {
-                  duration: 850,
-                  delay: 100,
-                  smooth: true
-                })
-              }}>ABOUT</NavItem>
-              <NavItem className={classes.navItem} onClick={function () {
-                Scroll.scroller.scrollTo('tracksScrollPoint', {
-                  duration: 850,
-                  delay: 100,
-                  smooth: true
-                })
-              }}>TRACKS</NavItem>
-              <NavItem className={classes.navItem} onClick={function () {
-                Scroll.scroller.scrollTo('faqScrollPoint', {
-                  duration: 850,
-                  delay: 100,
-                  smooth: true
-                })
-              }}>FAQS</NavItem>
-              <NavItem className={classes.navItem} onClick={function () {
-                Scroll.scroller.scrollTo('sponsorsScrollPoint', {
-                  duration: 850,
-                  delay: 100,
-                  smooth: true
-                })
-              }}>SPONSORS</NavItem>
+              <NavItem className={classes.navItem} onClick={() =>
+                this.scrollToElement('aboutScrollPoint')}>ABOUT</NavItem>
+              <NavItem className={classes.navItem} onClick={() =>
+                this.scrollToElement('tracksScrollPoint')}>TRACKS</NavItem>
+              <NavItem className={classes.navItem} onClick={() =>
+                this.scrollToElement('faqScrollPoint')}>FAQS</NavItem>
+              <NavItem className={classes.navItem} onClick={() =>
+                this.scrollToElement('sponsorsScrollPoint')}>SPONSORS</NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
