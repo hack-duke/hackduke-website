@@ -5,21 +5,20 @@
   height: 200px;
 }
 
-.footerLeft {
-  position: absolute;
-  bottom: 30px;
-  left: 40px;
-  height: 150px;
-}
-
 .contact {
   text-align: center;
 }
 
 .mlh {
   position: absolute;
-  left: 40px;
-  height: 150px;
+  left: 2vw;
+  height: 1vh;
+}
+
+.mlhPartner {
+  position: absolute;
+  right: 5vw;
+  height: 2vh;
 }
 
 .contactContainer {

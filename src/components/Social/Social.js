@@ -1,13 +1,19 @@
 import React from 'react'
 import classes from './Social.scss'
+import mlh from 'static/sponsors/mlh.png'
 
 export const Social = () => (
   <div>
     <div className={classes.footerBackground}>
       <a className={classes.mlh}
         href={'https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white'}>
-        <img src={'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg'}
+        <img style={{'width': '100px'}} src={'https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg'}
         alt={'Major League Hacking 2017 Hackathon Season'}/>
+      </a>
+      <a className={classes.mlhPartner}
+        href={'https://static.mlh.io/docs/mlh-code-of-conduct.pdf'}>
+        <img style={{'height': '15vh', 'width': 'auto'}} src={mlh}
+             alt={'Major League Hacking 2017 Hackathon Season'}/>
       </a>
       <div className={classes.contact}>
         <div className={classes.contactContainer}>
