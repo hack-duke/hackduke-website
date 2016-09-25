@@ -17,7 +17,7 @@ class Header extends React.Component {
   //   });
   // }
 
-  render() {
+  render () {
     return (
       <div>
         <Navbar inverse fixedTop>
@@ -28,33 +28,33 @@ class Header extends React.Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem className={classes.navItem} onClick={function() {
-                Scroll.scroller.scrollTo('aboutScrollPoint',{
+              <NavItem className={classes.navItem} onClick={function () {
+                Scroll.scroller.scrollTo('aboutScrollPoint', {
                   duration: 850,
                   delay: 100,
-                  smooth: true,
-                });
+                  smooth: true
+                })
               }}>ABOUT</NavItem>
-              <NavItem className={classes.navItem} onClick={function() {
-                Scroll.scroller.scrollTo('tracksScrollPoint',{
+              <NavItem className={classes.navItem} onClick={function () {
+                Scroll.scroller.scrollTo('tracksScrollPoint', {
                   duration: 850,
                   delay: 100,
-                  smooth: true,
-                });
+                  smooth: true
+                })
               }}>TRACKS</NavItem>
-              <NavItem className={classes.navItem} onClick={function() {
-                Scroll.scroller.scrollTo('faqScrollPoint',{
+              <NavItem className={classes.navItem} onClick={function () {
+                Scroll.scroller.scrollTo('faqScrollPoint', {
                   duration: 850,
                   delay: 100,
-                  smooth: true,
-                });
+                  smooth: true
+                })
               }}>FAQS</NavItem>
-              <NavItem className={classes.navItem} onClick={function() {
-                Scroll.scroller.scrollTo('sponsorsScrollPoint',{
+              <NavItem className={classes.navItem} onClick={function () {
+                Scroll.scroller.scrollTo('sponsorsScrollPoint', {
                   duration: 850,
                   delay: 100,
-                  smooth: true,
-                });
+                  smooth: true
+                })
               }}>SPONSORS</NavItem>
             </Nav>
           </Navbar.Collapse>
