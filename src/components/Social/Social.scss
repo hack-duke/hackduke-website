@@ -1,19 +1,36 @@
 @import 'src/styles/base';
 
-.contact {
+.footerBackground {
   background-color: $footerBlack;
   height: 200px;
+}
+
+.footerLeft {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  height: 150px;
+}
+
+.contact {
   text-align: center;
 }
 
+.mlh {
+  position: absolute;
+  left: 40px;
+  height: 150px;
+}
+
 .contactContainer {
+  padding-left: 0;
   text-align: center;
   padding-top: 50px;
 }
 
 .footerIcon, .footerIcon:visited, .footerIcon:link, .footerIcon:active {
   cursor: pointer;
-  padding: 20px; 
+  padding: 20px;
   color: #FFFFFF;
   font-size: 2em;
 }
