@@ -1,4 +1,5 @@
 import React from 'react'
+import Scroll from 'react-scroll'
 import classes from './SponsorsPage.scss'
 import SponsorsItem from 'components/SponsorsItem'
 import { Row, Col } from 'react-bootstrap'
@@ -97,6 +98,7 @@ class SponsorsPage extends React.Component {
   render () {
     return (
       <div>
+        <Scroll.Element name='sponsorsScrollPoint'></Scroll.Element>
         <div className={classes.sponsors}>
           <div>
             <h1 className={classes.header}>{this.state.title}</h1>

@@ -9,7 +9,7 @@ const title = 'FAQS'
 
 export const FAQ = () => (
   <div>
-    <Scroll.Element name="faqScrollPoint"></Scroll.Element>
+    <Scroll.Element name='faqScrollPoint'></Scroll.Element>
     <div className={faqclasses.faq}>
       <h1 className={classes.header}>
         {title}

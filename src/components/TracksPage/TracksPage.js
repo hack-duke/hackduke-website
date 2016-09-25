@@ -1,9 +1,11 @@
 import React from 'react'
+import Scroll from 'react-scroll'
 import classes from './TracksPage.scss'
 import TracksGrid from 'components/TracksGrid'
 
 export const TracksPage = () => (
   <div>
+    <Scroll.Element name='tracksScrollPoint'></Scroll.Element>
     <div className={classes.container}>
       <div className={classes.tracks}>
         <h1 className={classes.tracksHeader}>TRACKS</h1>

@@ -1,9 +1,11 @@
 import React from 'react'
+import Scroll from 'react-scroll'
 import classes from './About.scss'
 import AboutSection from 'components/AboutSection'
 
 export const About = () => (
   <div>
+    <Scroll.Element name='aboutScrollPoint'></Scroll.Element>
     <div className={classes.about} >
       <div className={'container text-center'}>
         <h1 className={classes.header}> HACKDUKE IS ABOUT </h1>
