@@ -11,11 +11,12 @@
 
 .mlh {
   position: absolute;
-  left: 2vw;
+  left: 5vw;
   height: 1vh;
 }
 
 .mlhPartner {
+  padding-top: 50px;
   position: absolute;
   right: 5vw;
   height: 2vh;
@@ -43,4 +44,17 @@
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 1px;
+}
+
+
+@media (max-width: $tabletBreakpoint) {
+
+  .mlh {
+    display: none;
+  }
+
+  .mlhPartner {
+    display: none;
+  }
+
 }
