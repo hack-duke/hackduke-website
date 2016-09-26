@@ -11,16 +11,12 @@ import Social from 'components/Social'
 export const HomeView = () => (
   <div>
     <HeroPage />
-    <div id={'about'} style={{'transform': 'translateY(-50px)'}}></div>
     <Scroll.Element name='aboutScrollPoint'></Scroll.Element>
     <About />
-    <div id={'tracks'} style={{'transform': 'translateY(-50px)'}}></div>
     <Scroll.Element name='tracksScrollPoint'></Scroll.Element>
     <TracksPage />
-    <div id={'faq'} style={{'transform': 'translateY(-50px)'}}> </div>
     <Scroll.Element name='faqScrollPoint'></Scroll.Element>
     <FAQ />
-    <div id={'sponsors'} style={{'transform': 'translateY(-50px)'}}> </div>
     <Scroll.Element name='sponsorsScrollPoint'></Scroll.Element>
     <SponsorsPage />
     <Social />
