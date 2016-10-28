@@ -2,10 +2,6 @@ import React from 'react'
 import classes from './SponsorsPage.scss'
 import SponsorsItem from 'components/SponsorsItem'
 import { Row, Col } from 'react-bootstrap'
-<<<<<<< HEAD
-import dsg from 'static/sponsors/dsg.png'
-=======
->>>>>>> ca6bff7e9b80bed1554028350c3d3107ad11fdbd
 import lifelock from 'static/sponsors/lifelock.png'
 import google from 'static/sponsors/google.png'
 import coinbase from 'static/sponsors/coinbase.png'
