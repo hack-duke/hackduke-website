@@ -2,6 +2,10 @@ import React from 'react'
 import classes from './SponsorsPage.scss'
 import SponsorsItem from 'components/SponsorsItem'
 import { Row, Col } from 'react-bootstrap'
+<<<<<<< HEAD
+import dsg from 'static/sponsors/dsg.png'
+=======
+>>>>>>> ca6bff7e9b80bed1554028350c3d3107ad11fdbd
 import lifelock from 'static/sponsors/lifelock.png'
 import google from 'static/sponsors/google.png'
 import coinbase from 'static/sponsors/coinbase.png'
@@ -25,10 +29,10 @@ class SponsorsPage extends React.Component {
   constructor () {
     super()
     this.state = {
-      sponsorsUrls: ['http://esri.com', 'http://facebook.com', 'http://lifelock.com', 'https://coinbase.com', 'https://zoho.com',
-      'http://microsoft.com', 'https://cerner.com', 'https://colab.duke.edu', 'https://optum.com', 'http://appian.com',
-      'http://pratt.duke.edu', 'https://twitter.com', 'https://cs.duke.edu', 'https://google.com', 'https://qualtrics.com/',
-      'https://stickermule.com/', 'https://particle.io/'],
+      sponsorsUrls: ['http://esri.com', 'http://facebook.com', 'http://lifelock.com',
+      'https://coinbase.com', 'https://zoho.com', 'http://microsoft.com', 'https://cerner.com', 'https://colab.duke.edu',
+      'https://optum.com', 'http://appian.com', 'http://pratt.duke.edu', 'https://twitter.com', 'https://www.cs.duke.edu',
+      'https://google.com', 'https://www.qualtrics.com/', 'https://stickermule.com/', 'https://particle.io/'],
       windowWidth: window.innerWidth,
       imageUrls: [esri, fb, lifelock, coinbase, zoho, microsoft, cerner, colab, optum, appian, pratt,
       twitter, cs, google, qualtrics, stickermule, particle],
