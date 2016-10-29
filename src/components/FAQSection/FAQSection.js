@@ -16,18 +16,6 @@ export const FAQSection = (props) => (
   </div>
 )
 
-// function generateTextWithLink (beforeText, link, linkText, afterText) {
-//   return (
-//     <div>
-//       {beforeText}
-//       {' '}
-//       <a href={link} className={classes.link}>{linkText}</a>
-//       {' '}
-//       {afterText}
-//     </div>
-//   )
-// }
-
 function generateTextWithMultiLinks (beforeText, link, linkText, middleText, link0, linkText0, afterText) {
   return (
     <div>
